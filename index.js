@@ -14,7 +14,7 @@ const router = express.Router();
 const path = require("path");
 
 dotenv.config();
-// MONGO_URL=mongodb+srv://3231811912y204:kwjEwyiI4H5f5WIZ@rusty584.wklrs.mongodb.net/
+
 mongoose.connect(
  // process.env.MONGO_URL,
   "mongodb://localhost:27017",
