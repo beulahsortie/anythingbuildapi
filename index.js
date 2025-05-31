@@ -22,13 +22,13 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Change this to your frontend URL
+    origin: "http://34.67.250.184:3000", // Change this to your frontend URL
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization",
   })
 );
 dotenv.config();
-// MONGO_URL=mongodb+srv://3231811912y204:kwjEwyiI4H5f5WIZ@rusty584.wklrs.mongodb.net/
+
 mongoose.connect(
   process.env.MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
